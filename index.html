@@ -31,6 +31,10 @@
             overflow-x: hidden;
         }
 
+        :root {
+            --header-offset: 6.5rem;
+        }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -98,8 +102,8 @@
         }
 
         .logo img {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             border-radius: 8px;
             border: 2px solid #ffffff;
             transition: all 0.3s ease;
@@ -194,6 +198,7 @@
             align-items: center;
             position: relative;
             background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+            padding-top: var(--header-offset);
         }
 
         .hero::before {
@@ -220,7 +225,7 @@
 
         .hero-title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 8vw, 8rem);
+            font-size: clamp(2.3rem, 5vw, 5rem);
             font-weight: 900;
             margin-bottom: 1.5rem;
             color: #ffffff;
@@ -340,6 +345,10 @@
         .about {
             padding: 8rem 0;
             background: #000000;
+        }
+
+        section {
+            scroll-margin-top: var(--header-offset);
         }
 
         .section-title {
@@ -775,8 +784,7 @@
             <img src="logo.png" alt="Bonkfather" class="hero-logo">
             <h1 class="hero-title">$BONKFATHER</h1>
             <p class="hero-subtitle">The Godfather of Memecoins</p>
-            <p class="hero-quote">"I'm gonna make him an offer he can't refuse"</p>
-            <p>CA: </p>
+            <p class="hero-quote">CA: </p>
             <div class="hero-buttons">
                 <a href="#" class="cta-btn">JOIN THE FAMILY</a>
             </div>
